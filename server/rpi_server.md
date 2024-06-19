@@ -6,6 +6,8 @@
 $ cd ~/.ssh
 
 $ ssh-keygen -t ed25519 -C "pi"
+
+$ cat pi.pub
 ```
 
 ### Step 2: Generate Heredoc for the output to be used at [step 15](#step-15-Configure-Pi-ssh-authorized-keys)
@@ -67,7 +69,7 @@ $ sudo dd bs=1M if=2024-03-15-raspios-bookworm-arm64-lite.img of=/dev/sdn
 - password output from `openssl rand -base64 24`
 
 ### Step 6: Fixing Locale issue
-> edit /etc/locale.gen uncomment en_US.UTF-8
+> edit /etc/locale.gen uncomment en_US.UTF-8 UTF-8
 
 ```shell
 sudo nano /etc/locale.gen
@@ -114,10 +116,10 @@ ip a
 ```
 
 ### Step 13: SSH into the Pi
-> Heads-up: replace `10.0.1.94` with IP of Raspberry Pi
+> Heads-up: replace `192.168.x.x` with IP of Raspberry Pi
 
 ```shell
-ssh pi-admin@10.0.1.94
+ssh pi-admin@192.168.x.x
 ```
 
 ### Step 14: Disable Bash history for the Pi
@@ -153,18 +155,18 @@ exit
 ```
 
 ### Step 17: log in
-> Heads-up: replace `10.0.1.94` with IP of Raspberry Pi.
+> Heads-up: replace `192.168.x.x` with IP of Raspberry Pi.
 
 > Heads-up: when asked for passphrase, enter passphrase from [step 1](#step-1-create-ssh-key-pair-on-macos).
 
 
 ```shell
-ssh -i ~/.ssh/pi pi-admin@10.0.1.94
+ssh -i ~/.ssh/pi pi-admin@192.168.x.x
 ```
 
 
 ### Step 18: switch to root
-
+∫ƒ∫ƒ∫ƒ
 ```shell
 sudo su -
 ```
@@ -335,7 +337,7 @@ See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 > Be sure NTP is working. Check status with `timedatectl` - make sure "NTP Service" is "active".
 
 ```shell
-timedatectl set-timezone America/Montreal
+timedatectl set-timezone America/Denver
 ```
 
 ### Step 30: disable swap

@@ -1,0 +1,108 @@
+<mxfile host="65bd71144e">
+    <diagram id="qlk6ryN0O5kQD0Javxga" name="Page-1">
+        <mxGraphModel dx="2052" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="WDbdCo5jng8c9Y3r5QUf-26" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-620" y="120" width="1190" height="680" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/internet_cloud.svg;" parent="1" vertex="1">
+                    <mxGeometry x="-50.12" y="140.35" width="110" height="69.3" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Firewall" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/firewall.svg;" parent="1" vertex="1">
+                    <mxGeometry x="-25.25" y="300" width="60.25" height="98.77" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#0050ef;strokeColor=#66FFFF;" parent="1" source="3" target="2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="50" y="300" as="sourcePoint"/>
+                        <mxPoint x="100" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="&lt;font color=&quot;#00ffff&quot;&gt;Blue Team&lt;br&gt;VLAN&lt;/font&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;DFIR&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#66FFFF;" parent="1" vertex="1">
+                    <mxGeometry x="-40.120000000000005" y="600" width="90" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;font color=&quot;#ffff00&quot;&gt;LAN Netork&lt;br&gt;VLAN&lt;br&gt;&lt;/font&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Windows&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Servers&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Active Directory&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#FFFF00;" parent="1" vertex="1">
+                    <mxGeometry x="271.56" y="563.75" width="162.5" height="162.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;font color=&quot;#00ff00&quot;&gt;Malware Isolated VLAN&lt;/font&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Linux VM&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Windows VM&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#00FF00;" parent="1" vertex="1">
+                    <mxGeometry x="-350" y="582.5" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;&lt;font color=&quot;#000000&quot; style=&quot;font-size: 16px;&quot;&gt;Internet&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="-30" y="160" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;font color=&quot;#ff3333&quot;&gt;Attacker&amp;nbsp;&lt;br&gt;VLAN&lt;/font&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;Kali Linux VM&lt;/li&gt;&lt;/ul&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#FF3333;" parent="1" vertex="1">
+                    <mxGeometry x="307" y="290.33" width="118.12" height="118.12" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="&lt;font color=&quot;#ff8000&quot;&gt;Management&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;VLAN&lt;/font&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Laptop Apple Silicon&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#FF8000;" parent="1" vertex="1">
+                    <mxGeometry x="-330" y="295.33" width="108.11" height="108.11" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;font color=&quot;#ff8000&quot;&gt;Management: VLAN 1&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;Red Team: VLAN 2&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#ffff00&quot;&gt;LAN: VLAN 3&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#00ffff&quot;&gt;Blue Team: VLAN 4&lt;/font&gt;&lt;br&gt;&lt;br&gt;Malware: VLAN 5" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#00FF00;labelBackgroundColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="-600" y="330" width="180" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeColor=#66FFFF;fontSize=16;fontColor=#FF8000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="5" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-110" y="570" as="sourcePoint"/>
+                        <mxPoint x="-230" y="645" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeColor=#66FFFF;fontSize=16;fontColor=#FF8000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="5" target="6" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-30.11999999999989" y="655" as="sourcePoint"/>
+                        <mxPoint x="-220" y="655" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeColor=#66FFFF;fontSize=16;fontColor=#00FFFF;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="5" target="3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-110" y="560" as="sourcePoint"/>
+                        <mxPoint x="-60" y="510" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="WDbdCo5jng8c9Y3r5QUf-25" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeColor=#FF8000;fontSize=16;fontColor=#00FFFF;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="21" target="3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-100" y="490" as="sourcePoint"/>
+                        <mxPoint x="-50" y="440" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="132" y="150" width="175" height="175" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Dont want this attacking VM&lt;br&gt;nor isolated malware vms&lt;br&gt;To access my network&amp;nbsp;&lt;br&gt;To prevent malicious shit" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="137" y="197.5" width="170" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="endArrow=classic;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;strokeColor=#FFFF00;" parent="1" source="6" target="3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="75" y="563.75" as="sourcePoint"/>
+                        <mxPoint x="115" y="503.75" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=0.917;exitY=0.607;exitDx=0;exitDy=0;strokeColor=#FFFF00;exitPerimeter=0;" parent="1" source="3" target="15" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="281.55999999999995" y="614.375" as="sourcePoint"/>
+                        <mxPoint x="36.21562749867462" y="394.24135824783525" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;strokeColor=#FF0000;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="15" target="3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-40" y="400" as="sourcePoint"/>
+                        <mxPoint x="10" y="350" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;strokeColor=#FF0000;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="6" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="317" y="388.91999999999985" as="sourcePoint"/>
+                        <mxPoint x="41.94829159815754" y="381.04363327852616" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="Oeg6PyI9tLY58rv5xH3V" name="Page-2">
+        <mxGraphModel dx="407" dy="124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
